@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de porcentagem</title>
+</head>
+
+<body class="center">
+    <main>
+        <header>
+            <h1>Calculadora de porcentagem</h1>
+            <p>Adicione o valor total <span>(no campo em azul)</span>, depois adicione os valores em porcentagem
+                <span>(no campo em vermelho)</span> ou em unidade <span>(no campo em verde)</span> para ver o resutado,
+                o resutado sera mostrado logo abaixo.</p>
+        </header>
+        <form action="#">
+            <div class="valorTotal center">
+                <input type="number" name="valorTotal" id="valorTotal" class="campos"
+                    placeholder="Coloque o valor total aqui" required value="100">
+                <label for="valorTotal" hidden>comentário</label>
+                <label><input type="checkbox" name="manter valor total?" id="manterValorTotal" checked>Manter valor
+                    total?</label>
+            </div>
+            <div class="valores">
+                <div class="valor">
+                    <input type="number" name="valorPorcentagem" id="valorPorcentagem" class="campos"
+                        placeholder="Valor em porcentagem aqui" value="15">
+                    <label for="valorPorcentagem" hidden>comentário</label>
+                    <input type="button" value="Adicionar porcentagem" id="adicionarValorPorcentagem" class="btn">
+                </div>
+                <div class="valor">
+                    <input type="number" name="valorUnidade" id="valorUnidade" class="campos"
+                        placeholder="Valor em unidade aqui">
+                    <label for="valorUnidade" hidden>comentário</label>
+                    <input type="button" value="Adicionar unidade" id="adicionarValorUnidade" class="btn">
+                </div>
+            </div>
+            <p class="alert center display_none">Preencha o campo valor total, e um dos outros dois para continuar</p>
+        </form>
+        <div class="center">
+            <div class="resultados display_none">
+                <!-- <div class="resultado center">
+                    <div class="valor-resultado">
+                        <p><strong>15%</strong> de <strong>100</strong> sao <strong>15</strong></p>
+                    </div>
+                    <div class="grafico center">
+                        <div class="total center">
+                            <div class="porcentagem"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resultado center">
+                    <div class="valor-resultado">
+                        <p><strong>10</strong> é <strong>10%</strong> de <strong>100</strong></p>
+                    </div>
+                    <div class="grafico center">
+                        <div 
+                        class="total center" 
+                        style="
+                            background-color: aqua;
+                        ">
+                            <div 
+                            class="porcentagem" 
+                            style="
+                                background-color: yellow;
+                                width: 30%;
+                            ">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
